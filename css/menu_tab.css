@@ -1,0 +1,68 @@
+.tab {
+    float: left;
+    
+    width: 350px;
+    height: 400px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+
+/* personaliza a tab */
+.tabcontent {
+    float: left;
+    width: 835px;
+    margin-left: 10px;
+    height: 545px;
+    background-color: #ddd;
+}
+.tabcontent img{
+    width: 820px;
+    height: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    display: block;
+    border-radius: 5px;
+}
+/* Area de navegção das tab */
+.tablink {
+    width:350px;
+    height: 90px;
+    background-color: #30a5a5;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-left: 5px;
+    border-radius: 5px;
+
+    padding: 5px 15px; 
+    color:#fff;
+    font-family: Louis, arial;
+    font-size: 16px;
+    line-height: 20px;
+}
+.tablink:hover{
+   background: #66c2e7;
+   color:#000;
+    
+}
+
+
+/* Style each tab content individually */ 
+#mapa1, #mapa2, #mapa3, #mapa4{
+    border-left:2px solid #66c2e7
+}

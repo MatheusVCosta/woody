@@ -1,0 +1,168 @@
+h5, a{
+    padding: 0;
+    margin: 0;
+}
+
+#tblConsulta{
+    width:550px;
+    height: 500px;
+    margin-top: 20px;
+}
+.linhaConsulta{
+    width:100%;
+    height: 40px;
+    
+}
+.linhaConsultaText{
+    width:100%;
+    height: 90px;
+
+}
+.colConsulta{
+    width:167px;
+    height: 40px;
+    border-bottom: 1px solid black; 
+    float: left;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Louis, arial;
+    
+}
+.colConsultaResult{
+    width:383px;
+    height: 40px;
+    border-bottom: 1px solid black; 
+    float: left;
+    padding: 10px;
+    padding-top:10px; 
+    font-family: Louis, arial;
+    font-size: 17px;
+
+}.colConsultaResultText{
+    width:383px;
+    height: 90px;
+    border-bottom: 1px solid black; 
+    float: left;
+    padding: 10px;
+    overflow: auto;
+    padding-top:10px; 
+    font-family: Louis, arial;
+    font-size: 17px;
+}
+#fecharContainer{
+    width:50px;
+    height:40px;
+    margin-left: 10px;
+}
+#fecharContainer img{
+    width:50px;
+    height:50px;
+}
+
+/* tabela niveis */
+
+.tblNiveis{
+    width: 500px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border:2px solid #3c97d3;
+    border-radius: 5px;
+    overflow: auto;
+
+}
+.linhaNiveis{
+    width:150px;
+    height: 45px;
+    border-bottom:2px solid #3c97d3;
+    float:left;
+
+    padding-top: 5px;
+    text-align: center;
+    font-family: Louis, arial;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.imgNiveis{
+    width:40px;
+    height:40px;
+    float: left;
+    cursor: pointer;
+    border-bottom:2px solid #3c97d3;
+}
+/* tableEndereco */
+    #cadastroEndereco{
+        width:520px;
+        height: 210px;
+        border:2px solid #3c97d3;
+        border-radius: 7px;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Louis, arial;
+        font-size: 17px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .txtEndereco{
+        width:200px;
+        height:30px;
+        border:2px solid #3c97d3;
+        border-radius: 8px;
+    }
+    .buttonSave{
+        width:100px;
+        height: 30px;
+        border:none;
+        background-color: #3c97d3;
+        color:white;
+        border-radius: 8px;
+        margin-top: 10px;
+        margin-left:45px;
+        cursor: pointer;
+    }
+    #tableEndereco{
+        width:520px;
+        height: 255px;
+        border:2px solid #3c97d3;
+        border-radius: 7px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: auto;
+        margin-top: 10px;
+        font-family: Louis, arial;
+        font-size: 17px;
+       
+    }
+    .colFormEndereco{
+        width:245px;
+        height:150px;
+       
+        float:left;
+    }
+    #lineEndereco{
+        width:100%;
+        height:25px;
+        
+    }
+    .colEndereco{
+        height:25px;
+        padding-left: 5px;
+        padding-top: 2px;
+        float:left;        
+    }
+    .colEnderecoResult{
+        height:40px;
+        padding-left: 5px;
+        padding-top: 5px;
+        float:left;   
+            
+    }
+    .colEnderecoResult img{
+        width:35px;
+        height:35px;   
+            
+    }
+   
+/* fim tableEndeco */

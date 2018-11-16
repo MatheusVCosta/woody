@@ -1,0 +1,659 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding:0;
+    background-image: url(../biblioteca.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+@font-face{
+    font-family:Louis; 
+    src: url(../../fonts/Louis\ George\ Cafe.ttf);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.5);
+    position:fixed;
+    z-index:999;
+    display:none;
+}
+#modal, #modalUsuario{
+    width:550px;
+    height:560px;
+    background-color: #fff;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:40px;
+    border-radius:5px;
+}
+
+p, h3, ul{
+    padding: 0;
+    margin: 0;
+}
+#containerCMS{
+    width: 1200px;
+    height: 870px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border:1px solid black;
+    border-radius:50px;
+}
+
+header{
+    width: 100%;
+    height: 130px;
+    border-bottom:2px solid black;
+    background-color: #30a5a5;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+#titulo{
+    width: 550px;
+    height: 50px;
+    margin-left: 30px;
+    float: left;
+    margin-top: 35px;
+}
+#titulo p{
+    font-family: Louis, arial;
+    font-size: 29px;
+    margin-top: 17px;
+}
+#logo{
+    width: 230px;
+    height: 120px;
+    background-color: #30a5a5;
+    float: left;
+    margin-left: 340px;
+    margin-top: 5px;
+    padding-left: 25px;
+    padding-top: 25px;
+   
+}
+
+.seguraMenu{
+    width: 100%;
+    height: 160px;
+    background-color: #e8e8e8;
+}
+nav{
+    width: 867px;
+    height: 160px;
+    float: left;
+    
+}
+.linkMenu{
+    width:140px;
+    height:160px;
+    float: left;
+    padding-top: 20px;
+    margin-left: 70px;
+    cursor: pointer; 
+}
+.linkMenu:hover{
+    transform: scale(1.1);
+}
+.linkMenu img{
+    width:90px;
+    height:90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.opMenu{
+    font-family: Louis, arial;
+    font-size: 15px;
+    margin-top:-10px;
+    margin-left: 7px;
+    width:130px;
+    text-align: center;
+}
+
+.informacoes{
+    width: 230px;
+    height: 160px;
+    border-left: 1px solid black;
+    float: left;
+    padding-top: 30px;
+}
+#lblFrase{
+    margin-left:25px;
+    font-family: Louis, arial;
+    font-size: 23px;
+    
+}
+#lblUser{
+    margin-left:2px;
+    font-family: Louis, arial;
+    font-size: 21px;
+}
+#seguraLink{
+    padding-top:65px;
+    margin-left: 65px;
+}
+#logout{
+    margin-top:30px;
+    margin-left: 190px;
+    font-family: Louis, arial;
+    font-size: 19px;
+    color:black;
+}
+#logout:hover{
+    color:#30a5a5;
+    text-decoration: #30a5a5;
+}
+#areaControle{
+    width: 100%;
+    height: 510px;
+    border-top:2px solid black;
+    background-color: #e8e8e8;
+}
+.seguraConfig{
+    width:1200px;
+    height: 510px;
+    float: left;
+    
+}
+.configPagina{
+    width:240px;
+    height:510px;
+    padding-top: 10px;
+    display: block;
+    border-right:2px solid black;
+    float: left;
+}
+
+/* Css da admConteudos */
+#formCadastro{
+    width:468px;
+    height:230px;
+}
+
+.divCadastro{
+    width:233px;
+    height:228px;
+    float:left;
+    border-bottom:1px solid #30a5a5;
+
+}
+.linhasForm{
+    width:233px;
+    height:57px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.tituloCadastro{
+    font-family: Louis, arial;
+    font-size: 16px;
+}
+.txtForm{
+    width:210px;
+    height:30px;
+    border-radius: 5px; 
+    border:1px solid black;
+}
+.admPaginas{
+    width:958px;
+    height:510px;
+    float: left;
+    
+}
+.seguraForm{
+    width:470px;
+    height:455px;
+    border:1px solid #30a5a5;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.seguraTable{
+    width:460px;
+    height:455px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.tituloForm{
+    font-family: Louis, arial;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 10px;
+    color:#30a5a5;
+}
+
+/* tabela Autores */
+.tabelaAutores{
+    width:450px;
+    height:450px;
+    border:1px solid #30a5a5;
+    margin:auto;
+    border-radius:10px;
+}
+.linhaResult{
+    width:450px;
+    height:40px;
+    font-family: Louis, arial;
+    font-size: 16px;
+}
+.colResult{
+    width:120px;
+    height:40px;
+    float: left;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.colResultOpcoes{
+    width:120px;
+    height:40px;
+    float: left;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.colResultOpcoes img{
+    width:30px;
+    height:30px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+/* FIM TABELA AUTORES */
+
+/* btnEscolherImagem */
+#seguraBtn{
+    width:170px;
+    height:70px;
+}
+.visualizarFoto{
+    width:290px;
+    height:200px; 
+    float:left;
+    background-color: #fff;
+    border:1px solid black;
+    border-radius:5px;
+    margin-left:1px;
+    margin-top: 10px;
+}
+.visualizarFoto img{
+    width:inherit;
+    height: inherit; 
+    border-radius:5px;
+    margin:auto;
+    display: block;
+}
+.txtButton{
+    font-family: Louis, arial;
+    font-size: 18px;
+    margin-left: 15px;
+}
+.btnEscolherImagem{
+    width:150px;
+    height:40px;
+    border-radius: 7px;
+    margin-left:15px;   
+    text-align: center;
+    font-family: Louis, arial;
+    font-size: 15px;
+    color:#fff;
+    background-color: #30a5a5;
+    cursor:pointer;
+    border: none;
+
+}
+
+/* Fim admConteudo */
+
+.configPagina img{
+    width:80px;
+    height:80px;
+    margin-left: 15px;
+    float: left;
+}
+.carregarConteudo{
+    width:959px;
+    height:510px;
+    float: left;
+}
+.liPagina{
+    width:100%;
+    height: 100px;
+}
+.liPagina:hover{
+    transform: scale(1.1);
+}
+.linkPag{
+    float: left;
+    margin-top: 12px;
+    margin-left: 10px;
+    font-family: Louis, arial;
+    font-size: 15px;
+}
+.tituloFaleConosco{ 
+    height: 60px;
+    font-family: Louis, arial;
+    font-size: 18px;
+    background-color: #30a5a5;
+    text-align: center;
+    padding-top: 15px;
+    color:white;
+}
+#seguraTabela{
+    width: 100%;
+    height: 510px;
+    overflow: auto;
+
+}
+
+.tblFaleConosco{
+    margin: auto;
+    width:1000px;
+    min-height:485px;
+    border:1px solid black;
+    margin-top: 10px;    
+}
+.titulos{
+    width:998px;
+    height: 45px;
+    text-align: center;
+    background-color: #d4cfcf;
+    
+}
+.colTitulos{
+    height:45px;
+    float:left;
+    border-left: 1px solid black;
+    padding-top:10px; 
+    font-family: Louis, arial;
+    font-size: 18px;
+}
+.mostrarConsulta{
+    width:998px;
+    height: 35px;
+    font-family: Louis, arial;
+    font-size: 16px;
+    
+}
+
+.mostrarConsulta:hover{
+    background-color: #d4cfcf;
+}
+.colResultado{
+    height:35px;
+    border-bottom:1px solid black;
+    border-left: 1px solid black;
+    float: left;
+}
+
+.imgPadding{
+    padding: 0;
+    margin:auto;
+    display: block;
+}
+/* Menu de usuarios */
+.divConteudo{
+    width:958px;
+    height:500px;
+    display:block;
+    overflow: auto;
+}
+.tblUsuario{
+    width:500px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 20px;
+   
+}
+.linhaUser{
+    width:500px;
+    height: 60px;
+    border:2px solid #3c97d3;
+    float: left;
+    margin-top:10px;
+    border-radius: 4px;
+    
+}
+.colUser{
+    width:150px;
+    height: 60px;
+    float: left;
+    padding-top: 18px;
+    padding-left: 10px;
+    font-family: Louis, arial;
+    font-size: 18px;
+}
+.txtUser{
+    width:300px;
+    height: 60px;
+    float: left;
+    padding-top: 10px;
+}
+.txtUser input{
+    width:300px;
+    height: 40px;
+    border:2px solid #3c97d3;
+    border-radius: 5px;
+
+}
+.cbPermissao{
+    width:300px;
+    height: 40px;
+    border:2px solid gray;
+    border-radius: 10px;
+}
+.rdoAtivado{
+    font-family: Louis, arial;
+    font-size: 18px;
+    margin-left: 50px;
+   
+}
+
+/* CSS da tabela de usuarios */
+
+.tblUsuarios{
+    margin: auto;
+    width:895px;
+    min-height:485px;
+    border:1px solid black;
+    margin-top: 10px;  
+    overflow: auto;  
+}
+
+.imagemUser{
+    width:32px;
+    height: 32px;
+    float: left;
+    margin-left:15px;
+}
+.titulosUsers{
+    width:893px;
+    height: 45px;
+    text-align: center;
+    background-color: #d4cfcf;
+    
+}
+.mostrarConsultaUsers{
+    width:893px;
+    height: 35px;
+    font-family: Louis, arial;
+    font-size: 16px;
+    
+}
+.mostrarConsultaUsers:hover{
+    background-color: #d4cfcf;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    border-top:2px solid black;
+    background-color: #30a5a5;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#rodape{
+    text-align: center;
+    font-family: Louis, arial;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* AdmPaginas */
+    /* Pagina NOssas lojas */
+        .admNossasLojas{
+            width: 955px;
+            height: 500px;
+            margin-left:auto;
+            margin-right: auto;
+        }
+        .seguraFormLojas{
+            width: 480px;
+            height:450px;
+            border:1px solid #30a5a5;
+            border-radius:5px;
+            margin-top:20px;
+            margin-left:25px;
+            float:left;
+        }
+        .seguraTabelaLojas{
+            width: 425px;
+            height:450px;
+            overflow: auto;
+            border-radius:5px;
+            margin-top:20px;
+            margin-left:25px;
+            float:left;
+        }
+        .seguraFormEndereco{
+            width: 450px;
+            height:160px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            
+            border:1px solid black;
+            border-radius:5px;
+
+            padding-top: 10px;
+            padding-left: 20px;
+            
+        }
+        #labelEndereco{
+            margin-top: 15px;
+        }
+        .seguraFormEndereco label{
+            font-family: Louis, arial;
+            font-size: 18px;
+        }
+        .cbEndereco{
+            width: 400px;
+            height: 30px;
+            border:1px solid #3c97d3;
+            border-radius: 8px;
+        }
+        .cadastrarEndereco{
+            margin-top:1900px;
+
+        }
+        .cadastrarEndereco:hover{
+            color:#3c97d3;
+            
+        }
+        .tabelaMostrarConteudo{
+            width:402px;
+            height: auto;
+            min-height:450px;
+            border:1px solid #30a5a5;
+            margin:auto;
+            border-radius:10px;
+            
+        }
+        
+    
+    
+    /* Fim Nossas Lojas */
+    /* promocoes */
+        .comboBoxSLT{
+            width: 400px;
+            height: 30px;
+            border: 1px solid #3c97d3;
+            border-radius: 8px;
+        }
+        .txtFormGeral{
+            width: 150px;
+            height: 30px;
+            border: 1px solid #3c97d3;
+            border-radius: 8px;
+        }
+        .rdoFormGeral{
+            font-family: Louis, arial;
+            font-size: 18px;
+        }
+        .labelFormGeral{
+            font-family: Louis, arial;
+            font-size: 18px;
+            margin-top: 20px;
+            line-height: 30px;
+        }
+        .seguraFormGeral{
+            width: 450px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+    /* Fim promocoes */
+    /* Livro do mes */
+        
+    
+        .seguraTabelaMes{
+            width: 920px;
+            height:450px;
+            border-radius:5px;
+            margin-top:20px;
+            margin-left:25px;
+            overflow: auto;
+        }
+        
+
+    /* Fim livro do Mes */
+    /* AdmSobre */
+        .seguraFormSobre{
+            width: 480px;
+            height: 450px;
+            border: 1px solid #30a5a5;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-left: 25px;
+            float: left;
+        }
+        .seguraTabelaSobre{
+            width: 480px;
+            height: 450px;
+            border: 1px solid #30a5a5;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-left: 25px;
+            float: left;
+        
+        }
+
+
+    /* Fim admSobre */
+/* Fim admPaginas */

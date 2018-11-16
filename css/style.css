@@ -1,0 +1,760 @@
+    *{
+    box-sizing: border-box;/*Pesquisar em casa*/
+    }
+    @font-face{
+        font-family:Louis; 
+        src: url(../fonts/Louis\ George\ Cafe.ttf);
+    }
+    /* ****************HOME******************* */
+    a{text-decoration: none; color:black;}
+    body, h1, h2,h1,ul, p, li{
+        margin: 0;
+        padding: 0; 
+    }
+    p{
+        word-break: break-all;
+    }
+    li{
+        list-style: none;
+    }
+    #principal{
+        width:100%;
+        height: auto;
+        min-height: 800px;
+    }
+    header{
+        width:100%;
+        height: 100px;
+        background-color: #30a5a5;
+        position: fixed;
+        z-index: 999;
+    }
+    #seguraItens{
+        width: 1300px;
+        height: 100px;
+        margin:auto;
+    }
+    #logo{
+        width:150px;
+        height:60px;
+        float: left;
+        margin-top: 20px;
+        background-image: url(../imagem/logo.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    #navMenu{
+        width:680px;
+        height:80px;
+        margin-left: 5px;
+        margin-top: 10px;
+        float:left;
+    }
+    .listaMenu{
+        width:100px;
+        float: left;
+        text-align: center;
+        font-family: Louis, arial;
+        font-size: 15px;
+        color:white;
+        margin-left: 10px;
+        margin-top:30px;
+        list-style-type: none; 
+    }
+    .listaMenu a{
+        color:white;
+    }
+    .listaMenu:hover{
+        border-bottom:2px solid #68c2e8;
+        border-radius:2px;
+    }
+    /*FIM MENU */
+    /*COMEÇO FORMULÁRIO DE LOGIN*/
+    #form{
+        width:450px;
+        height:50px;
+        padding-left: 5px;
+        padding-top: 20px;
+        float: left;
+    }
+    .frmLogin{
+        width:160px;
+        height: 50px;
+        float: left;
+    }
+    .frmSenha{
+        width:260px;
+        height: 55px;
+        float: left;
+        margin-left: 10px;
+    }
+    .erroLogin{
+        color:red;
+        font-size:15px;
+        font-family: Louis, arial;
+        margin-left: 7px;
+    }
+    .txtAutenticacao{
+        width:160px;
+        height: 25px;
+        border:none;
+        border-radius: 7px;
+        font-family: Verdana;
+        font-size: 11px;
+        padding-left: 7px;
+        margin-top: 5px;
+        float: left;
+    }
+    .lblAutenticacao{
+        font-size: 16px;
+        font-family: 'arial';
+        color: #fff; 
+    }
+    .btnLogin{
+        width:40px;
+        height: 30px;
+        border-radius:7px;
+        border:none;
+        margin-top: 2px;
+        background-color:#fff;
+        margin-left: 10px;
+        float: left;
+        cursor: pointer;
+        padding-top: 4px;
+        padding-left: 12px;
+        font-family: Louis, arial;
+        color:balck;
+    }
+    .btnLogin:hover{
+        background-color: #68c2e8;
+        color: #fff;
+    }
+
+    /*FINAL DO FORMULÁRIO*/
+    #conteudo{
+        padding-top: 100px;
+        width:1200px;
+        height: 1925px;
+        margin: auto;
+    }
+    #tamanhoImagem{
+        width:100px;
+        height: 450px;
+        background-size: 100% 100%;
+    }
+    .container{
+        width: 100%;
+        min-height: 1200px;
+        height: auto;
+        overflow: hidden;
+    }
+    .seguraConteudo{
+        width:1100px;
+        height: 1800px;
+        float: left;
+        width:1100px;
+        height: auto;
+        min-height: 800px;
+        height: auto;
+    }
+    /*REDE SOCIAS*/
+    #rdSocial{
+        width: 78px;
+        height: 1000px;
+        float: left;
+        margin-top: 30px;
+    }
+    .seguraRede{
+        width: 78px;
+        height:200px;
+        position: fixed;
+    }
+    .redes{
+        width:70px;
+        height: 70px;
+        margin-left:10px;
+        cursor: pointer;
+    
+    }
+    .redes:hover{
+        transition: 1s;
+        transform: scale(1.1);
+    }
+    /*FIM REDE SOCIAIS*/
+    /*MENU LATERAL*/
+    #menuLateral{
+        width:210px;
+        height: 1360px;
+        margin-top: 30px;
+        float: left;
+        box-shadow:1px 1px 30px gray;
+        border-radius: 5px;
+    }
+    .itensMenuLateral{
+        width:210px;
+        height:50px;
+        color:black;
+        padding-left:10px;
+        padding-top: 10px;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+        font-family: verdana;
+        font-size: 16px;
+    }
+    .itensMenuLateral:hover{
+        transition: 1s;
+        background-color: rgb(48,165,165);
+        
+
+    }
+    /*FIM MENU LATERAL*/
+    /*AREA DOS LIVROS*/
+    #areaEstoque{
+        width:860px;
+        min-height: 1200px;
+        height: auto;
+        overflow: hidden;
+        float: left;
+        margin-left: 30px;
+    }
+    .linhaEstoque{
+        width:860px;
+        height: 445px;
+        margin-top: 20px;
+    }
+    .col-estoque{
+        width: 270px;
+        height: 445px;
+        margin-left:12px;
+        float: left;
+    }
+    .col-estoque:hover{
+        transition: 1s;
+        box-shadow:10px 10px 25px gray;
+        border-radius: 15px;
+    }
+    .imagem{
+        width:200px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .imagem img{
+        width:200px;
+        height: 250px;
+    }
+    .breveDescricao{
+        width:250px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        /*Font*/
+        font-family: verdana;
+        font-size: 17px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .info{
+        font-family: verdana;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 25px;
+    }
+    .txtNome{
+        font-size: 15px;
+        font-family: arial;
+    }
+    .txtPreco{
+        font-size: 18px;
+        font-family: arial;
+        color: #30a5a5;
+    }
+    .desc{
+        font-size: 15px;
+        font-family: arial;
+    }
+    .infoPreco{
+        font-family: verdana;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 25px;
+    }
+    .detalhes{
+        font-size: 13px;
+        margin-left:170px;
+    }
+    /*FIM DOS ESTOQUES*/
+
+    /* Footer */
+    footer{
+        width: 100%;
+        height: 135px;
+        background-color: #30a5a5;
+    }
+    .conteudoFooter{
+        width: 1200px;
+        height: 100px;
+        margin:auto;
+    }
+    .copyright{
+        width:480px;
+        height: 80px;
+        float: left;
+        margin-top: 20px;
+    }
+    .imagemLogo{
+        width:200px;
+        height: 135px;
+        float: left;
+        padding-top: 50px;
+    }
+    .imagemLogo img{
+        margin-top: -20px;
+    }
+    .copyrightFont{
+        font-family: Verdana;
+        font-size: 12px;
+        color:#fff;
+        text-align: center;
+        margin-top:20px;
+    }
+    /* Final footer */
+
+    /*pagina autores destaque*/
+    #conteudoAutores{
+        padding-top: 100px;
+        width:1200px;
+        height: auto;
+        min-height: 800px;
+        height: auto;
+        overflow: hidden;
+        margin: auto;
+    }
+    .titulo{
+        font-family: gravity, arial;
+        font-size: 40px;
+        text-align: center;
+        color:#30a5a5;
+
+        width:1200px;
+        height: 55px;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom:2px solid #66c2e7;
+        border-radius: 1px;
+    }
+    .linhaAutor{
+        width:1100px;
+        height: 480px;
+        background-color:rgb(224,224,224);
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius:5px;
+    }
+    .fotoAutor{
+        width:282px;
+        height:440px;
+        margin-top:25px;
+        margin-left: 10px;
+        float: left;
+    }
+    .fotoAutor img{
+        width:282px;
+        height:440px;
+    }
+    .seguraTexto{
+        width:780px;
+        height:440px;
+        margin-left: 10px;
+        margin-top:25px;
+        float: left;
+    }
+    .nomeAutor{
+        font-family: gravity, arial;
+        font-size: 30px;
+        text-align: center;
+        color:#30a5a5;
+        margin-top: 1px;
+      
+    }
+    .sobreAutor{
+        width:750px;
+        height:310px;
+        background-color:rgba(176,212,212,0.64);
+        margin-left: 20px;
+        margin-top:5px;  
+        border-radius: 5px; 
+        padding:20px;
+        overflow: auto;
+    }
+    .infoAutor{
+        font-family: gravity,arial;
+        font-size: 18px;
+        text-align: center;
+        color:#30a5a5;
+        margin-left: 20px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+    .infoAutor2{
+        font-family: gravity, arial;
+        font-size: 16px;
+        text-align: center;
+        color:rgb(78, 78, 78);
+        margin-left: 10px;
+    }
+    .biografia{
+        font-family: verdana;
+        font-size: 15px;
+        text-align: left;
+        color:#000;
+        margin-left: 10px;
+        word-break: break-all;
+        
+        white-space:unset; 
+        text-overflow:ellipsis;
+    }
+    .leiaMais{
+        margin-left: 300px;
+        font-family:arial;
+        font-size: 13px;
+        font-weight: bold;
+        color:#30a5a5;
+    }
+    .leiaMais:hover{
+       border-bottom: 1px solid black;
+    }
+    /* FIm Autor destaque */
+
+    /* pagina promoção */
+    .linhaPromocao{
+        min-width:1200px;
+        width:auto;
+        min-height: 500px;
+        height: auto;
+        margin-top:60px;
+
+    }
+    .col-promocao{
+        width:370px;
+        height: 480px;
+        margin-left: 12px;
+        float:left;
+        border:2px solid #66c2e7;
+        border-radius: 10px;
+        padding-top: 20px;
+    }
+    .imagemPromocao{
+        width:320px;
+        height: 320px;
+        margin:auto;
+    }
+    .imagemPromocao img{
+        width:inherit;
+        height:inherit;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+    .guardaTexto{
+        width:360px;
+        height:130px;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top:5px;
+    }
+    .tituloLivro{
+        text-align: center;
+        font-size: 20px;
+        font-family: gravity, arial;
+        color:#30a5a5;
+        font-weight: bold;
+        margin-top:10px;
+        white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+        
+    }
+    .precoPromocao{
+        text-align: center;
+        font-size: 18px;
+        font-family: arial;
+        color:#30a5a5;
+        font-weight: bold;
+       
+    }
+    .precoAntigo{
+        text-align: center;
+        font-size: 13px;
+        font-family: arial;
+        color:gray;
+        text-decoration-line: line-through;
+        margin-top:10px;
+    }
+    .btnComprar{
+        width:100px;
+        height: 35px;
+        border-radius: 7px;
+        border:none;
+        background-color:#30a5a5;
+        color:#FFF;
+        margin-left:125px;
+        margin-top: 10px;
+        float:left;
+    }
+    .btnComprar:hover{
+        cursor:pointer;
+    }
+    .imgCurti{
+        width:40px;
+        height: 40px;
+        background-image: url(../imagem/redeSocial/if_like_309056\ \(1\).png);
+        background-size: 100% 100%;
+        margin-left: 90px;
+        margin-top:3px;
+        float:left;
+        cursor:pointer;
+    }
+    /* FIM PROMOÇÕES */
+
+    /* Pagina Sobre */
+    .sobreWoody{
+        width:1200px;
+        height: 1500px;
+        margin-top: 120px;
+        border:2px solid #66c2e7;
+        border-radius: 5px;
+    }
+   .linhaSobreW{
+        width:1200px;
+        height: 450px;
+      
+   }
+   .linhaSobreMenor{
+        width:1150px;
+        height: 150px;
+        margin: auto;
+        border-bottom:2px solid #66c2e7;
+    }
+    .imgLivraria{
+        width:480px;
+        height: 420px;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 3px; 
+        float: left;
+    }
+    .textoSobre{
+        width:650px;
+        height: 400px;
+        margin-left:25px;
+        margin-top: 30px;
+        float: left;
+        border-radius: 1px;
+    }
+    
+    .tituloSobre{
+        text-align: center;
+        color:#30a5a5;
+        font-family: Louis, arial;
+        font-size: 20px;
+        border-bottom:2px solid #66c2e7;
+        border-radius: 1px;
+    }
+    
+    .textoWoody, .textoWoody1{
+        font-family: Louis, arial;
+        font-size: 16px;
+        margin-top: 30px;
+        text-align: justify;
+        line-height: 22px;
+    }
+    .textoWoody1{margin: 0;}
+    .tituloMissao{
+        width:1000px;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 50px;
+
+        text-align: center;
+        color:#30a5a5;
+        font-family: Louis, arial;
+        font-size: 28px;
+        border-bottom:2px solid #66c2e7;
+        border-radius: 1px;  
+    }
+    .seguraMissao{
+        width: 1200px;
+        height: 300px;
+        padding-left: 100px;
+    }
+    #nossaMissao1, #nossaMissao2{
+        width:500px;
+        height: 300px;
+        margin-left:2px;
+        float: left;
+        
+        padding-left: 40px;
+        padding-top: 25px; 
+    }
+    #nossaMissao2{border-left:2px solid #66c2e7}
+    .listaMissao{
+    
+        list-style:disc;
+        line-height: 45px;
+        font-size: 20px;
+        color:#000;
+        font-family: Louis, arial;
+        
+    }
+    /* Fim SOBRE */
+
+    /* Livro do mês */
+    #principalLivroMes{
+        width:100%;
+        height:1200px;
+    }
+    #conteudoLivroMes{
+        padding-top: 100px;
+        width:1200px;
+        min-height: 1200px;
+        height: auto;
+        overflow: hidden;
+        margin: auto;
+    }
+    .linhaLivroDoMes{
+        width:1200px;
+        height: 900px;
+        border:2px solid #66c2e7;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius:5px;
+       
+    }
+    .linhaMes{
+        width:1200px;
+        height: 450px;
+        padding-left: 25px;
+
+    }
+    .livroTitulo{
+        text-align: center;
+        color:#30a5a5;
+        font-family: Louis, arial;
+        font-size: 30px;
+    }
+    .imagemLivro{
+        width:250px;
+        height: 300px;
+        margin-left:0px;
+        margin-top:20px;
+        float: left;
+    }
+    .imagemLivro img{
+        border-radius: 2px;
+        width:250px;
+        height: 320px;
+        
+    }
+    .historia{
+        width:650px;
+        height: 350px;
+        margin-left: 10px;
+       
+        float: left;  
+        padding: 30px;
+        font-family: Louis, arial;
+        font-size: 17px;
+        text-align: justify;
+        white-space: normal; 
+        overflow: auto;
+        text-overflow: ellipsis;
+    }
+    .infoLivro{
+        width:230px;
+        height: 350px;
+        margin-left: 25px;
+        border-left:1px solid black;
+        float: left;  
+    }
+    #sobreLivro{
+        text-align: center;
+        color:#30a5a5;
+        font-family: Louis, arial;
+        font-size: 18px;
+    }
+    #infomacoesLivro{
+        width:230px;
+        height: 270px;
+        padding: 20px 10px;
+    }
+    .informacaoAdicional{
+        line-height:30px;
+        color:#30a5a5;
+        font-family: Louis, arial;
+        font-size: 17px;
+
+    }
+    .livro{
+        color:black;
+        font-family: Louis, arial;
+        font-size: 14px;
+    }
+    .seguraEnredo{
+        width: 1200px;
+        height: 420px;
+        margin-top: -20px;
+    }
+    #enredo, #adaptacao{
+        width:550px;
+        height: 380px;
+        margin-left:20px;;
+        float: left;
+       
+    }
+    #adaptacao{border-left:2px solid #66c2e7}
+    .textoEnredo{
+        text-align: justify;
+        color:black;
+        font-family: Louis, arial;
+        font-size: 16px;
+    }
+    .listaAdaptacao li{
+        list-style: disc;
+        margin-left:30px;
+        text-align: justify;
+        color:black;
+        font-family: Louis, arial;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    /* Fim livro do mes */
+    /* Nossas Lojas */
+
+    #principalLojas{
+        width:100%;
+        height:850px;
+    }
+    #conteudoLojas{
+        padding-top: 100px;
+        width:1200px;
+        min-height: 850px;
+        height: auto;
+        overflow: hidden;
+        margin: auto;
+    }
+    .linhaLojas{
+        width:1200px;
+        height: 550px;
+        border:2px solid #66c2e7;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius:5px;
+       
+    }

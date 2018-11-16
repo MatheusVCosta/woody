@@ -1,0 +1,267 @@
+    *{
+    box-sizing: border-box;/*Pesquisar em casa*/
+    }
+    @font-face{
+        font-family:Louis; src: url(../../fonts/Louis\ George\ Cafe.ttf);
+    }
+    a:link{
+        text-decoration: none;
+    }
+    a{
+        color:black;
+    }
+    body,h1,h2,p,ul,picture{
+        margin: 0;
+        padding: 0; 
+    }
+    li{
+        list-style: none;
+    }
+
+    html{
+        --corPadraoMenu:#FFF;
+        --corFundoHeader:#30a5a5;
+    }
+    #principal{
+        width:100%;
+        height:1000px;
+    }
+    header{
+        width:100%;
+        height: 100px;
+        background-color: #30a5a5;
+        position: fixed;
+        z-index: 999;
+    }
+    #seguraItens{
+        width: 1300px;
+        height: 100px;
+        margin:auto;
+       
+    }
+    
+    #logo{
+        width:150px;
+        height:60px;
+        float: left;
+        margin-top: 20px;
+        background-image: url(../../imagem/logo.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    #navMenu{
+        width:680px;
+        height:80px;
+        margin-left: 5px;
+        margin-top: 10px;
+        float:left;
+    }
+    .listaMenu{
+        width:100px;
+        float: left;
+        text-align: center;
+        font-family: Louis, arial;
+        font-size: 15px;
+        color:white;
+        margin-left: 10px;
+        margin-top:30px;
+        list-style-type: none; 
+    }
+    .listaMenu a{
+        color:#fff;
+    }
+    .listaMenu:hover{
+        border-bottom:2px solid #68c2e8;
+        border-radius:2px;
+    }
+    /*FIM MENU */
+    /*COMEÇO FORMULÁRIO DE LOGIN*/
+    #form{
+        width:380px;
+        height:100px;
+        padding-top: 20px;
+        float: left;
+    }
+    .frmLogin{
+        width:160px;
+        height: 80px;
+        float: left;
+    }
+    .frmSenha{
+        width:210px;
+        height: 80px;
+        float: left;
+        margin-left: 10px;
+    }
+    .txtAutenticacao{
+        width:160px;
+        height: 25px;
+        border:none;
+        border-radius: 7px;
+        font-family: Verdana;
+        font-size: 11px;
+        padding-left: 7px;
+        margin-top: 5px;
+        float: left; 
+    }
+    .lblAutenticacao{
+        font-size: 16px;
+        font-family: 'arial';
+        color: #fff; 
+    }
+    .btnLogin{
+        width:40px;
+        height: 30px;
+        border-radius:7px;
+        border:none;
+        margin-top: 2px;
+        background-color:#fff;
+        margin-left: 10px;
+        float: left;
+        cursor: pointer;
+        padding-top: 4px;
+        padding-left: 12px;
+        font-family: Louis, arial;
+        color:balck;
+    }
+    .btnLogin:hover{
+        background-color: #68c2e8;
+        color: #fff;
+    }
+
+    /*FINAL DO FORMULÁRIO*/
+    #conteudo{
+        padding-top: 100px;
+        width:1200px;
+        height: 865px;
+        margin: auto;
+        
+    }
+    .seguraConteudo{
+        width:1100px;
+        height: 765px;
+        float: left;
+        padding-top:50px;
+    }
+    .formularioFC{
+        width:800px;
+        height: 700px;
+        border:2px solid #0d1e40;
+        border-radius: 10px;
+        margin:auto;
+    }
+    .titulo{
+        text-align: center;
+        font-family: Louis, arial;
+        font-size: 25px;
+        color: #30a5a5;
+    }
+    .linha{
+        width:550px;
+        height:100px;
+        margin:auto;
+    }
+    .col{
+        width:250px;
+        height:100px;
+        float: left;
+        margin-left: 10px;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    .lblForm{
+        font-size: 16px;
+        font-family: Louis, arial;
+      
+    }
+    .txtForm, .txtAreaForm{
+        width:220px;
+        height: 30px;
+        border:1px solid #68c2e8; 
+        border-radius: 7px;
+        font-family: Verdana;
+        font-size: 11px;
+        padding-left: 7px;
+        margin-top: 5px;
+        float: left;
+    }
+    .txtAreaForm{
+        width:220px;
+        height: 80px;
+    }
+    .btnForm{
+        width:220px;
+        height: 35px;
+        border-radius: 7px;
+        border:none;
+        margin-top: 30px;
+        background-color:#30a5a5;
+        color:#FFF; 
+        cursor: pointer;
+    }
+    /*REDE SOCIAS*/
+    #rdSocial{
+        width: 78px;
+        height: 700px;
+        float: left;
+        margin-top: 30px;
+    }
+    .seguraRede{
+        width: 78px;
+        height:200px;
+        position: fixed;
+    }
+    .redes{
+        width:70px;
+        height: 70px;
+        margin-left:10px;
+        cursor: pointer;
+    
+    }
+    .redes:hover{
+        transition: 1s;
+        transform: scale(1.1);
+    }
+    /*FIM REDE SOCIAIS*/
+    /*AREA DOS LIVROS*/
+    #areaEstoque{
+        width:860px;
+        height: 1400px;
+        float: left;
+        margin-left: 30px;
+    }
+    
+    footer{
+        width: 100%;
+        height: 135px;
+        background-color: #30a5a5;
+        
+    }
+    .conteudoFooter{
+        width: 1200px;
+        height: 135px;
+        margin:auto;
+    }
+    .copyright{
+        width:480px;
+        height: 80px;
+        float: left;
+        padding-top: 25px;
+    }
+    .imagem{
+        width:200px;
+        height: 135px;
+        float: left;
+        padding-top: 50px;
+    }
+    .imagem img{
+        margin-top: -20px;
+    }
+    .copyrightFont{
+        font-family: Verdana;
+        font-size: 12px;
+        color:#fff;
+        text-align: center;
+        margin-top: 20px;
+    }
+    /* Pagina autores */
